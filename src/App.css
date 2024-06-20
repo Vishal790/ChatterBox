@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #afb2bf;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000814;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #afb2bf;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+*:active::-webkit-scrollbar-thumb,
+*:focus::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+/* Hide default styling of details/summary */
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+.hover-text{
+    background-color: rgba(0, 0, 0, 0.35);
+}
+ 
+
+
+
+.blackButton {
+    @apply cursor-pointer rounded-md bg-richblack-800 px-[20px] py-[8px] font-semibold text-richblack-5;
+}
+
+.lable-style {
+    @apply text-[14px] text-richblack-5;
+}
+
+.form-style {
+    @apply rounded-lg bg-transparent p-3 text-[16px] leading-[24px] text-richblack-800 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
+}
+
+.section_heading {
+    @apply text-2xl font-bold text-richblack-5 lg:text-4xl;
+}
+
+.emboss {
+    box-shadow: 4px 2px 108px -6px rgba(104, 99, 99, 0.205) inset,
+        0px 7px 13px -3px rgba(0, 0, 0, 0),
+}
+
+
+.highlight_gradient {
+    background: #3B54CF;
+    background: linear-gradient(to right, #3B54CF 0%, #CFC5BA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in {
+    animation-name: slideIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.embossIcons{
+border-radius: 32px;
+    background: #fc8181;
+    box-shadow: 5px 5px 10px #bd6161,
+        -5px -5px 10px #ffa1a1;
+}
+
+.receiverShadow{
+box-shadow: -2px 2px 5px 0px #4a5568
+}
+
+.senderShadow{
+    box-shadow: 2px 2px 5px 0px #4a5568
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.slide-in {
+    animation: slide-in 0.3s ease-in;
+}
+
+.tab-shadow{
+box-shadow: 0px 1px 5px 3px #00000024
+}
+
+
+.bgcontainer{
+        width: 100%;
+            height: 100%;
+            --s: 200px;
+            /* control the size */
+            --c1: #1d1d1d;
+            --c2: #4e4f51;
+            --c3: #3c3c3c;
+        
+            background: repeating-conic-gradient(from 30deg,
+                    #0000 0 120deg,
+                    var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+                repeating-conic-gradient(from 30deg,
+                    var(--c1) 0 60deg,
+                    var(--c2) 0 120deg,
+                    var(--c3) 0 180deg);
+            background-size: var(--s) calc(var(--s) * 0.577);
+        
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #da6565 94%, #0000) top/9px 9px no-repeat,
+        conic-gradient(#0000 30%, #da6565);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+.receiver-clip{
+clip-path: polygon(4% 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 30% 100%, 0 100%, 4% 94%);}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    /* Adjust the width as needed */
+    height: 4px;
+    /* Adjust the height as needed */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(228, 22, 22, 0.5);
+    /* Adjust the color as needed */
+    border-radius: 10px;
+    /* Adjust the border radius as needed */
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 0, 0, 0.1);
+    /* Adjust the background as needed */
+}
+
+/* Thin scrollbar for Firefox */
+.thin-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(222, 210, 210, 0.5) rgb(225, 220, 220);
+    /* Adjust the colors as needed */
+}
