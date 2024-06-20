@@ -12,7 +12,6 @@ import { sampleMessage } from "../components/SampleData/sampleData";
 import MessageComponent from "../components/Chat/MessageComponent";
 import { Socket } from "socket.io-client";
 import { getSocket } from "../utils/socket";
-import message from "../../server/models/message";
 import { useLocation, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getChatDetails, getMessages } from "../services/operations/chat";
