@@ -4,10 +4,10 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-   build: {
+  build: {
     rollupOptions: {
-      external: ['mongoose']
-    }
+      external: /^mongoose($|\/)/, // Externalize mongoose
+    },
   },
   server: {
     port: 4000,
