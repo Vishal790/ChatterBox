@@ -56,7 +56,11 @@ cloudinaryConnect();
 
 app.use(
   cors({
-    origin: ["http://localhost:4000"],
+    origin: [
+      "http://localhost:4000",
+      "https://chatter-box-git-main-vishal790s-projects.vercel.app",
+      "https://chatter-box-rust.vercel.app",
+    ],
     credentials: true,
   })
 ); 
