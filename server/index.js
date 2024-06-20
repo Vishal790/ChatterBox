@@ -33,7 +33,8 @@ const io = new Server(server, {
 app.set("io", io);
 
 
-app.get("/", (req, res) => {
+server.get("/", (req, res) => {
+  console.log("connected to server");
   return res.json({
     success: true,
     message: "Backend is working"
