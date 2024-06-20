@@ -33,6 +33,13 @@ const io = new Server(server, {
 app.set("io", io);
 
 
+app.get("/", (req, res) => {
+  return res.json({
+    success: true,
+    message: "Backend is working"
+  })
+});
+
 
 import userRoutes from "./routes/User.js";
 import chatRoutes from "./routes/Chat.js";
