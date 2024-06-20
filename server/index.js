@@ -33,7 +33,7 @@ const io = new Server(server, {
 app.set("io", io);
 
 
-server.get("/", (req, res) => {
+app.get("/", (req, res) => {
   console.log("connected to server");
   return res.json({
     success: true,
