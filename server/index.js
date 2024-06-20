@@ -17,7 +17,14 @@ import cors from "cors";
 const server = createServer(app);
 
 const io = new Server(server, {
-  cors: { origin: ["http://localhost:4000"], credentials: true },
+  cors: {
+    origin: [
+      "http://localhost:4000",
+      "https://chatter-box-git-main-vishal790s-projects.vercel.app",
+      "https://chatter-box-rust.vercel.app",
+    ],
+    credentials: true,
+  },
 });
 
 // io.use((socket, next) => {
