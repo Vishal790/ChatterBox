@@ -1,4 +1,3 @@
-import { Email, Password } from "@mui/icons-material";
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
