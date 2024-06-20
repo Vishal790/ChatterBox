@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "vite build",
     "server": "cd server && npm run dev",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"vite --host\" \"npm run server\"",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"vite \" \"npm run server\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
