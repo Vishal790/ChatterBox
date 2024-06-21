@@ -29,7 +29,7 @@ const SignupForm = ({isLogin,setIsLogin,toggleLogin}) => {
 
        try {
        dispatch(signUp(formDataWithImage, navigate));
-      Clear the form fields
+      // Clear the form fields
       reset();
       // Reset the file input
       fileInputRef.current.value = null;
