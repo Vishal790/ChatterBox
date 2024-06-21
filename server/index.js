@@ -21,6 +21,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:4000",
       "https://chatter-box-git-main-vishal790s-projects.vercel.app",
+      "https://chatter-nep95kcwo-vishal790s-projects.vercel.app",
       "https://chatter-box-rust.vercel.app",
     ],
     credentials: true,
@@ -59,6 +60,7 @@ app.use(
     origin: [
       "http://localhost:4000",
       "https://chatter-box-git-main-vishal790s-projects.vercel.app",
+      "https://chatter-nep95kcwo-vishal790s-projects.vercel.app",
       "https://chatter-box-rust.vercel.app",
     ],
     credentials: true,
